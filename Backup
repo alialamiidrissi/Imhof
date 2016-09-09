@@ -1,0 +1,30 @@
+    Attributes:
+    /**public boolean equals(Object o) {
+        if (!o.getClass().equals(this.getClass()))
+            return false;
+        else {
+            Attributes obj = (Attributes) o;
+            Set<Entry<String, String>> entries = obj.attributes.entrySet();
+            for (Entry<String, String> entry : entries) {
+                if (!attributes.get(entry.getKey()).equals(entry.getValue()))
+                    return false;
+            }
+            return true;
+        }
+    }
+    */
+    
+    
+    OSMNode:
+        /**public boolean equals(Object o) {
+        if (!o.getClass().equals(this.getClass()))
+            return false;
+        else {
+            OSMNode obj = (OSMNode) o;
+            return (position.latitude() == obj.position.latitude()
+                    && position.longitude() == obj.position.longitude()
+                    && super.id() == obj.id()
+                    && super.attributes().equals(obj.attributes()));
+        }
+    }
+    */

@@ -1,0 +1,6 @@
+PolyLine:
+	- Faire la copie defensive des elements de la liste points avant de les ajouter
+	- 
+PolyGon:
+	- Voir le test JUnit
+	- Regler le probleme des listes (unmodifiableList/ Copie defensive/ Constructeur)
